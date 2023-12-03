@@ -309,95 +309,104 @@
     <panel name="InfoBarTemplate" />
   </screen>
   <screen name="SecondInfoBar" title="Second InfoBar" position="fill" flags="wfNoBorder">
-    <eLabel position="fill" backgroundColor="trBlack" zPosition="0" />
-    <widget source="session.CurrentService" render="CiModuleControl" allVisible="0" position="1645,85" size="260,38" borderWidth="1" borderColor="black" zPosition="1" transparent="1" font="Regular;29" />
-    <widget source="session.Event_Now" render="Label" position="15,170" size="914,36" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="unb2e0b4" noWrap="1" font="Regular;33" halign="left">
-      <convert type="EventName">NameNow</convert>
-    </widget>
-    <widget source="session.Event_Now" render="Label" position="15,226" size="765,33" font="Regular;30" halign="left" foregroundColor="saric" backgroundColor="secondBG" transparent="1" zPosition="1">
-      <convert type="EventName">Genre</convert>
-    </widget>
-    <widget source="session.Event_Now" render="Label" position="630,226" size="300,33" font="Regular;30" halign="right" foregroundColor="Magenta" backgroundColor="secondBG" transparent="1" zPosition="1">
-      <convert type="EventName">SmallRating</convert>
-    </widget>
-    <widget source="session.Event_Now" render="Label" position="16,280" size="915,560" font="Regular;30" halign="block" zPosition="1" transparent="1">
-      <convert type="EventName">FullDescription</convert>
-    </widget>
-    <widget source="session.Event_Next" render="Label" position="985,170" size="914,36" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="un99bad6" noWrap="1" font="Regular;33" halign="left">
-      <convert type="EventName">NameNext</convert>
-    </widget>
-    <widget source="session.Event_Next" render="Label" position="985,226" size="765,33" font="Regular;30" halign="left" foregroundColor="saric" backgroundColor="secondBG" transparent="1" zPosition="1">
-      <convert type="EventName">Genre</convert>
-    </widget>
-    <widget source="session.Event_Next" render="Label" position="1599,226" size="300,33" font="Regular;30" halign="right" foregroundColor="Magenta" backgroundColor="secondBG" transparent="1" zPosition="1">
-      <convert type="EventName">SmallRating</convert>
-    </widget>
-    <widget source="session.Event_Next" render="Label" position="985,280" size="915,560" font="Regular;30" halign="block" zPosition="1" transparent="1">
-      <convert type="EventName">FullDescription</convert>
-    </widget>
-    <panel name="InfoBarTemplate" />
-    <eLabel position="955,140" size="3,710" foregroundColor="darkgreyy" zPosition="3" backgroundColor="darkgreyy" />
-    <widget source="session.CurrentService" render="Label" position="15,860" size="1890,34" borderWidth="1" halign="center" font="Regular; 28" zPosition="1" transparent="1" backgroundColor="background" foregroundColor="fallback">
-      <convert type="PliExtraInfo">TransponderInfo</convert>
-    </widget>
-    <eLabel name="" position="0,850" size="1920,3" backgroundColor="darkgreyy" foregroundColor="darkgreyy" />
-    <eLabel name="" position="0,140" size="1920, 3" foregroundColor="notavailable" backgroundColor="notavailable" />
-    <widget noWrap="1" backgroundColor="background" font="Regular; 42" foregroundColor="un0bf300" render="Label" position="180,0" size="180,60" source="session.MSNWeather" transparent="1" zPosition="8" halign="left">
-      <convert type="MSNWeather">temperature_current</convert>
-    </widget>
-    <widget backgroundColor="background" font="Regular; 26" foregroundColor="unff9000" halign="left" position="180,58" render="Label" size="180,60" source="session.MSNWeather" transparent="1" valign="center" zPosition="3">
-      <convert type="MSNWeather">temperature_text,current</convert>
-    </widget>
-    <widget alphatest="blend" render="MSNWeatherPixmap" position="20,0" size="140,130" source="session.MSNWeather" transparent="1" zPosition="3">
-      <convert type="MSNWeather">weathericon,current</convert>
-    </widget>
-    <eLabel text="Humidity: %" position="420,5" size="190,38" zPosition="8" halign="left" font="Regular; 30" backgroundColor="background" transparent="1" foregroundColor="hellgreen" />
-    <widget noWrap="1" backgroundColor="black" font="Regular; 35" render="Label" position="600,5" size="85,40" source="session.MSNWeather" zPosition="8" halign="left" transparent="1" foregroundColor="un58bcff">
-      <convert type="MSNWeather">humidity</convert>
-    </widget>
-    <eLabel text="Wind:" position="420,50" size="130,38" zPosition="8" halign="left" font="Regular; 30" backgroundColor="black" transparent="1" foregroundColor="unff3737" />
-    <widget noWrap="1" backgroundColor="black" font="Regular; 26" render="Label" position="510,52" size="270,33" source="session.MSNWeather" zPosition="8" halign="left" transparent="1" foregroundColor="yellow">
-      <convert type="MSNWeather">winddisplay</convert>
-    </widget>
-    <widget alphatest="blend" render="MSNWeatherPixmap" position="900,0" size="130,120" source="session.MSNWeather" transparent="1" zPosition="5">
-      <convert type="MSNWeather">weathericon,day2</convert>
-    </widget>
-    <widget noWrap="1" backgroundColor="black" font="Regular; 25" render="Label" position="1030,47" size="190,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="cyan2">
-      <convert type="MSNWeather">temperature_high_low,day2</convert>
-    </widget>
-    <widget noWrap="1" backgroundColor="black" font="Regular; 25" render="Label" position="1030,4" size="190,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="white">
-      <convert type="MSNWeather">weekday,day2</convert>
-    </widget>
-    <widget noWrap="1" backgroundColor="black" font="Regular; 25" render="Label" position="1030,90" size="190,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="yellow">
-      <convert type="MSNWeather">temperature_text,day2</convert>
-    </widget>
-    <widget alphatest="blend" render="MSNWeatherPixmap" position="1220,0" size="120,120" source="session.MSNWeather" transparent="1" zPosition="5">
-      <convert type="MSNWeather">weathericon,day3</convert>
-    </widget>
-    <widget noWrap="1" backgroundColor="black" font="Regular; 25" render="Label" position="1342,4" size="190,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="white">
-      <convert type="MSNWeather">weekday,day3</convert>
-    </widget>
-    <widget noWrap="1" backgroundColor="black" font="Regular; 25" render="Label" position="1342,47" size="190,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="cyan2">
-      <convert type="MSNWeather">temperature_high_low,day3</convert>
-    </widget>
-    <widget noWrap="1" backgroundColor="black" font="Regular; 25" render="Label" position="1342,90" size="190,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="yellow">
-      <convert type="MSNWeather">temperature_text,day3</convert>
-    </widget>
-    <widget noWrap="1" backgroundColor="background" font="Roboto; 24" render="Label" position="420,95" size="360,35" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" foregroundColor="cyan" valign="center">
-      <convert type="MSNWeather">city</convert>
-    </widget>
-    <widget alphatest="blend" render="MSNWeatherPixmap" position="1532,0" size="120,120" source="session.MSNWeather" transparent="1" zPosition="5">
-      <convert type="MSNWeather">weathericon,day4</convert>
-    </widget>
-    <widget noWrap="1" backgroundColor="black" font="Regular; 25" render="Label" position="1655,4" size="190,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="white">
-      <convert type="MSNWeather">weekday,day4</convert>
-    </widget>
-    <widget noWrap="1" backgroundColor="black" font="Regular; 25" render="Label" position="1655,47" size="190,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="cyan2">
-      <convert type="MSNWeather">temperature_high_low,day4</convert>
-    </widget>
-    <widget noWrap="1" backgroundColor="black" font="Regular; 25" render="Label" position="1655,90" size="190,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="yellow">
-      <convert type="MSNWeather">temperature_text,day4</convert>
-    </widget>
+  <eLabel position="fill" backgroundColor="trBlack" zPosition="0" />
+  <widget source="session.CurrentService" render="CiModuleControl" allVisible="0" position="1645,85" size="260,38" borderWidth="1" borderColor="black" zPosition="1" transparent="1" font="Regular;29" />
+  <widget source="session.Event_Now" render="Label" position="15,170" size="914,36" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="unb2e0b4" noWrap="1" font="Regular;33" halign="left">
+    <convert type="EventName">NameNow</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Label" position="15,226" size="765,33" font="Regular;30" halign="left" foregroundColor="saric" backgroundColor="secondBG" transparent="1" zPosition="1">
+    <convert type="EventName">Genre</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Label" position="630,226" size="300,33" font="Regular;30" halign="right" foregroundColor="Magenta" backgroundColor="secondBG" transparent="1" zPosition="1">
+    <convert type="EventName">SmallRating</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Label" position="16,280" size="915,560" font="Regular;30" halign="block" zPosition="1" transparent="1">
+    <convert type="EventName">FullDescription</convert>
+  </widget>
+  <widget source="session.Event_Next" render="Label" position="985,170" size="914,36" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="un99bad6" noWrap="1" font="Regular;33" halign="left">
+    <convert type="EventName">NameNext</convert>
+  </widget>
+  <widget source="session.Event_Next" render="Label" position="985,226" size="765,33" font="Regular;30" halign="left" foregroundColor="saric" backgroundColor="secondBG" transparent="1" zPosition="1">
+    <convert type="EventName">Genre</convert>
+  </widget>
+  <widget source="session.Event_Next" render="Label" position="1599,226" size="300,33" font="Regular;30" halign="right" foregroundColor="Magenta" backgroundColor="secondBG" transparent="1" zPosition="1">
+    <convert type="EventName">SmallRating</convert>
+  </widget>
+  <widget source="session.Event_Next" render="Label" position="985,280" size="915,560" font="Regular;30" halign="block" zPosition="1" transparent="1">
+    <convert type="EventName">FullDescription</convert>
+  </widget>
+  <panel name="InfoBarTemplate" />
+  <eLabel position="955,143" size="3,710" foregroundColor="darkgreyy" zPosition="3" backgroundColor="darkgreyy" />
+  <widget source="session.CurrentService" render="Label" position="15,860" size="1890,34" borderWidth="1" halign="center" font="Regular; 28" zPosition="1" transparent="1" backgroundColor="background" foregroundColor="fallback">
+    <convert type="PliExtraInfo">TransponderInfo</convert>
+  </widget>
+  <eLabel name="" position="0,850" size="1920,3" backgroundColor="darkgreyy" foregroundColor="darkgreyy" />
+  <eLabel name="" position="0,140" size="1920, 3" foregroundColor="notavailable" backgroundColor="notavailable" />
+  <widget source="global.CurrentTime" render="Label" borderWidth="1" position="1714,5" size="132,40" font="Roboto; 38" valign="center" halign="right" zPosition="1" backgroundColor="background" transparent="1" foregroundColor="white">
+  <convert type="ClockToText">Format:%H : %M</convert>
+  </widget>  
+  <widget source="global.CurrentTime" render="Label" borderWidth="0" position="1840,8" size="62,34" font="Roboto; 28" valign="center" halign="right" zPosition="1" backgroundColor="background" transparent="1" foregroundColor="yellow">
+  <convert type="ClockToText">Format:: %S</convert>
+  </widget>
+  <widget noWrap="1" backgroundColor="black" font="Regular; 25" render="Label" position="180,10" size="190,30" source="session.MSNWeather" zPosition="8" halign="left" transparent="1" foregroundColor="white">
+    <convert type="MSNWeather">weekday,current</convert>
+  </widget>
+  <widget noWrap="1" backgroundColor="background" font="Regular; 35" foregroundColor="un0bf300" render="Label" position="180,50" size="180,37" source="session.MSNWeather" transparent="1" zPosition="8" halign="left">
+    <convert type="MSNWeather">temperature_current</convert>
+  </widget>
+  <widget backgroundColor="background" font="Regular; 26" foregroundColor="unff9000" halign="left" position="180,80" render="Label" size="180,60" source="session.MSNWeather" transparent="1" valign="center" zPosition="3">
+    <convert type="MSNWeather">temperature_text,current</convert>
+  </widget>
+  <widget alphatest="blend" render="MSNWeatherPixmap" position="20,0" size="120,120" source="session.MSNWeather" transparent="1" zPosition="3">
+    <convert type="MSNWeather">weathericon,current</convert>
+  </widget>
+  <eLabel text="Humidity: %" position="365,5" size="190,38" zPosition="8" halign="left" font="Regular; 30" backgroundColor="background" transparent="1" foregroundColor="hellgreen" />
+  <widget noWrap="1" backgroundColor="black" font="Regular; 35" render="Label" position="550,5" size="85,40" source="session.MSNWeather" zPosition="8" halign="left" transparent="1" foregroundColor="un58bcff">
+    <convert type="MSNWeather">humidity</convert>
+  </widget>
+  <eLabel text="Wind:" position="365,50" size="130,38" zPosition="8" halign="left" font="Regular; 30" backgroundColor="black" transparent="1" foregroundColor="unff3737" />
+  <widget noWrap="1" backgroundColor="black" font="Regular; 26" render="Label" position="455,52" size="270,33" source="session.MSNWeather" zPosition="8" halign="left" transparent="1" foregroundColor="yellow">
+    <convert type="MSNWeather">winddisplay</convert>
+  </widget>
+  <widget alphatest="blend" render="MSNWeatherPixmap" position="905,0" size="120,120" source="session.MSNWeather" transparent="1" zPosition="5">
+    <convert type="MSNWeather">weathericon,day2</convert>
+  </widget>
+  <widget noWrap="1" backgroundColor="black" font="Regular; 25" render="Label" position="710,47" size="190,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="cyan2">
+    <convert type="MSNWeather">temperature_high_low,day2</convert>
+  </widget>
+  <widget noWrap="1" backgroundColor="black" font="Regular; 25" render="Label" position="710,4" size="190,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="white">
+    <convert type="MSNWeather">weekday,day2</convert>
+  </widget>
+  <widget noWrap="1" backgroundColor="black" font="Regular; 25" render="Label" position="695,90" size="220,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="yellow">
+    <convert type="MSNWeather">temperature_text,day2</convert>
+  </widget>
+  <widget alphatest="blend" render="MSNWeatherPixmap" position="1248,1" size="120,120" source="session.MSNWeather" transparent="1" zPosition="5">
+    <convert type="MSNWeather">weathericon,day3</convert>
+  </widget>
+  <widget noWrap="1" backgroundColor="black" font="Regular; 25" render="Label" position="1055,4" size="190,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="white">
+    <convert type="MSNWeather">weekday,day3</convert>
+  </widget>
+  <widget noWrap="1" backgroundColor="black" font="Regular; 25" render="Label" position="1055,47" size="190,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="cyan2">
+    <convert type="MSNWeather">temperature_high_low,day3</convert>
+  </widget>
+  <widget noWrap="1" backgroundColor="black" font="Regular; 25" render="Label" position="1040,90" size="220,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="yellow">
+    <convert type="MSNWeather">temperature_text,day3</convert>
+  </widget>
+  <widget noWrap="1" backgroundColor="background" font="Roboto; 24" render="Label" position="365,93" size="360,35" source="session.MSNWeather" zPosition="3" halign="left" transparent="1" foregroundColor="cyan" valign="center">
+    <convert type="MSNWeather">city</convert>
+  </widget>
+  <widget alphatest="blend" render="MSNWeatherPixmap" position="1585,0" size="120,120" source="session.MSNWeather" transparent="1" zPosition="5">
+    <convert type="MSNWeather">weathericon,day4</convert>
+  </widget>
+  <widget noWrap="1" backgroundColor="black" font="Regular; 25" render="Label" position="1390,4" size="190,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="white">
+    <convert type="MSNWeather">weekday,day4</convert>
+  </widget>
+  <widget noWrap="1" backgroundColor="black" font="Regular; 25" render="Label" position="1390,47" size="190,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="cyan2">
+    <convert type="MSNWeather">temperature_high_low,day4</convert>
+  </widget>
+  <widget noWrap="1" backgroundColor="black" font="Regular; 25" render="Label" position="1375,90" size="220,30" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="yellow">
+    <convert type="MSNWeather">temperature_text,day4</convert>
+  </widget>
   </screen>
   <!-- Movie Player Infobar -->
   <screen name="MoviePlayer" title="InfoBar" position="150,67" size="1620,150" backgroundColor="transparent" flags="wfNoBorder">
