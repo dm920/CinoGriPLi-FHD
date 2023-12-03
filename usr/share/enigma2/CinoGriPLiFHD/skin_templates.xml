@@ -2,25 +2,25 @@
 <skin>
   <!-- Templates -->
   <screen name="Weather">
-    <widget alphatest="blend" render="OAWeatherPixmap" position="511,566" size="200,200" source="session.OAWeather" transparent="1" zPosition="3">
-      <convert type="OAWeather">weathericon,current,/usr/share/enigma2/CinoGriPLiFHD/weather_icons/,png</convert>
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="511,566" size="200,200" source="session.MSNWeather" transparent="1" zPosition="3">
+      <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/CinoGriPLiFHD/weather_icons/,png</convert>
     </widget>
-    <widget noWrap="1" font="Regular; 24" render="Label" position="55,700" size="410,32" source="session.OAWeather" zPosition="3" halign="right" transparent="1" foregroundColor="LightBlue2" backgroundColor="background">
-      <convert type="OAWeather">city</convert>
+    <widget noWrap="1" font="Regular; 24" render="Label" position="55,700" size="410,32" source="session.MSNWeather" zPosition="3" halign="right" transparent="1" foregroundColor="LightBlue2" backgroundColor="background">
+      <convert type="MSNWeather">city</convert>
     </widget>
-    <widget backgroundColor="background" font="Regular; 24" foregroundColor="unb2e0b4" halign="right" position="55,740" render="Label" size="410,32" source="session.OAWeather" transparent="1" valign="center" zPosition="3" noWrap="1">
-      <convert type="OAWeather">temperature_text,current</convert>
+    <widget backgroundColor="background" font="Regular; 24" foregroundColor="unb2e0b4" halign="right" position="55,740" render="Label" size="410,32" source="session.MSNWeather" transparent="1" valign="center" zPosition="3" noWrap="1">
+      <convert type="MSNWeather">temperature_text,current</convert>
     </widget>
-    <widget font="Regular; 28" render="Label" position="40,613" size="200,36" source="session.OAWeather" zPosition="3" halign="center" transparent="1" foregroundColor="white" backgroundColor="background" noWrap="1">
-      <convert type="OAWeather">temperature_heigh_low,day2</convert>
+    <widget font="Regular; 28" render="Label" position="40,613" size="200,36" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="white" backgroundColor="background" noWrap="1">
+      <convert type="MSNWeather">temperature_heigh_low,day2</convert>
     </widget>
-    <widget noWrap="1" foregroundColor="un00ffff" backgroundColor="background" transparent="1" font="Regular; 42" render="Label" position="40,556" size="200,50" source="session.OAWeather" zPosition="3" halign="center" valign="center">
-      <convert type="OAWeather">temperature_current</convert>
+    <widget noWrap="1" foregroundColor="un00ffff" backgroundColor="background" transparent="1" font="Regular; 42" render="Label" position="40,556" size="200,50" source="session.MSNWeather" zPosition="3" halign="center" valign="center">
+      <convert type="MSNWeather">temperature_current</convert>
     </widget>
     <eLabel name="" position="20,820" size="730,2" backgroundColor="un1a1a1a" foregroundColor="un1a1a1a" />
     <eLabel text="Humidity: %" position="325,572" size="140,30" font="Regular;24" zPosition="3" halign="left" foregroundColor="Burlywood2" backgroundColor="background" transparent="1" />
-    <widget source="session.OAWeather" render="Label" position="325,608" size="120,30" font="Regular;24" zPosition="3" halign="center" foregroundColor="white" backgroundColor="transpBlack" transparent="1" noWrap="1">
-      <convert type="OAWeather">humidity</convert>
+    <widget source="session.MSNWeather" render="Label" position="325,608" size="120,30" font="Regular;24" zPosition="3" halign="center" foregroundColor="white" backgroundColor="transpBlack" transparent="1" noWrap="1">
+      <convert type="MSNWeather">humidity</convert>
     </widget>
   </screen>
   <screen name="PlayerTemplate">
@@ -415,11 +415,11 @@
     </widget>
     <!-- weather_icons -->
     <ePixmap alphatest="blend" pixmap="CinoGriPLiFHD/infobar/drc.png" position="1637,981" size="38,36" transparent="1" zPosition="3" />
-    <widget alphatest="blend" render="OAWeatherPixmap" position="1760,909" size="140,100" source="session.OAWeather" transparent="1" zPosition="10">
-      <convert type="OAWeather">weathericon,current,/usr/share/enigma2/CinoGriPLiFHD/weather_icons/,png</convert>
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="1760,909" size="140,100" source="session.MSNWeather" transparent="1" zPosition="10">
+      <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/CinoGriPLiFHD/weather_icons/,png</convert>
     </widget>
-    <widget noWrap="1" foregroundColor="SteelBlue2" backgroundColor="black" transparent="1" font="Regular; 30" render="Label" position="1652,980" size="94,38" source="session.OAWeather" zPosition="10" halign="right" valign="top">
-      <convert type="OAWeather">temperature_current</convert>
+    <widget noWrap="1" foregroundColor="SteelBlue2" backgroundColor="black" transparent="1" font="Regular; 30" render="Label" position="1652,980" size="94,38" source="session.MSNWeather" zPosition="10" halign="right" valign="top">
+      <convert type="MSNWeather">temperature_current</convert>
     </widget>
     <!--<ePixmap pixmap="CinoGriPLiFHD/icons/icon_update_off.png" position="90,52" size="30,30" zPosition="0" alphatest="blend"/>-->
     <widget source="session.CurrentService" render="ChannelNumber" position="265,914" size="88,38" backgroundColor="background" transparent="1" zPosition="1" foregroundColor="unff3737" font="Roboto;32" valign="center" halign="center" />
@@ -459,8 +459,8 @@
       <convert type="ClockToText">Format:: %S</convert>
     </widget>
     <ePixmap pixmap="CinoGriPLiFHD/infobar/pframe.png" position="20,1047" size="220,30" zPosition="1" alphatest="blend" />
-    <widget backgroundColor="black" font="Regular; 17" foregroundColor="Thistle3" borderWidth="1" halign="center" position="1752,1014" render="Label" size="154,22" source="session.OAWeather" transparent="1" valign="center" zPosition="2" options="movetype=swimming,direction=left,repeat=2,steptime=50,startdelay=1000,noWrap">
-      <convert type="OAWeather">temperature_text,current</convert>
+    <widget backgroundColor="black" font="Regular; 17" foregroundColor="Thistle3" borderWidth="1" halign="center" position="1752,1014" render="Label" size="154,22" source="session.MSNWeather" transparent="1" valign="center" zPosition="2" options="movetype=swimming,direction=left,repeat=2,steptime=50,startdelay=1000,noWrap">
+      <convert type="MSNWeather">temperature_text,current</convert>
     </widget>
     <eLabel backgroundColor="un33333a" position="1448,965" size="290,6" foregroundColor="un33333a" />
     <widget source="session.CurrentService" render="Label" position="985,866" size="915,26" backgroundColor="secondBG" transparent="1" zPosition="1" foregroundColor="bbbbbf" font="Regular; 21" valign="center" halign="right">
