@@ -12,9 +12,9 @@
       <convert type="MSNWeather">temperature_text,current</convert>
     </widget>
     <widget font="Regular; 28" render="Label" position="40,613" size="200,36" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" foregroundColor="white" backgroundColor="background" noWrap="1">
-      <convert type="MSNWeather">temperature_heigh_low,day2</convert>
+      <convert type="MSNWeather">temperature_high_low,day1</convert>
     </widget>
-    <widget noWrap="1" foregroundColor="un00ffff" backgroundColor="background" transparent="1" font="Regular; 42" render="Label" position="40,556" size="200,50" source="session.MSNWeather" zPosition="3" halign="center" valign="center">
+    <widget noWrap="1" foregroundColor="un00ffff" backgroundColor="background" transparent="1" font="Regular; 42" render="Label" position="40,556" size="200,50" source="session.MSNWeather" zPosition="1" halign="center" valign="center">
       <convert type="MSNWeather">temperature_current</convert>
     </widget>
     <eLabel name="" position="20,820" size="730,2" backgroundColor="un1a1a1a" foregroundColor="un1a1a1a" />
