@@ -227,8 +227,7 @@
     <parameter name="ServiceInfo" value="0,0,450,50" />
     <parameter name="ServiceInfoLeft" value="0,0,450,45" />
     <parameter name="ServiceInfoRight" value="450,0,1000,45" />
-    <parameter name="VirtualKeyboard" value="68, 68" />
-    <parameter name="VirtualKeyBoard" value="69,68" />
+    <parameter name="VirtualKeyboard" value="69, 68" />
     <parameter name="VirtualKeyBoardShiftColors" value="0x00ffffff,0x00ffffff,0x0000ffff,0x00ff00ff" />
   </parameters>
   <switchpixmap>
@@ -2106,15 +2105,21 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)//2, orgpos.y() + (o
     <widget name="info" position="780,100" size="1110,38" font="Regular;28" halign="center" transparent="1" zPosition="2" />
   </screen>
   <!-- Virtual Keyboard -->
-  <screen name="VirtualKeyBoard" position="fill" zPosition="99" flags="wfNoBorder">
-    <panel name="PigTemplate" />
+  <screen name="VirtualKeyBoard" title="Virtual keyboard" position="fill" zPosition="99">
+    <panel name="PigTemplate"/>
     <panel name="Weather" />
-    <ePixmap pixmap="CinoGriPLiFHD/skin_default/vkey_text.png" position="927,235" size="816,78" zPosition="-4" alphatest="on" />
-    <widget name="header" position="930,120" size="810,39" transparent="1" noWrap="1" font="Regular;33" valign="top" />
-    <widget name="text" position="930,255" size="804,51" transparent="1" noWrap="1" font="Regular;38" valign="center" halign="right" />
-    <widget name="list" position="930,375" size="816,343" selectionDisabled="1" transparent="1" />
-  </screen>
-  <!-- AC3LipSyncSetup -->
+    <ePixmap pixmap="buttons/key_text.png" alphatest="blend" position="30,1031" size="52,38"/>
+    <ePixmap pixmap="buttons/key_info.png" alphatest="blend" position="82,1031" size="52,38"/>
+    <ePixmap pixmap="buttons/key_help.png" alphatest="blend" position="135,1031" size="52,38"/>
+    <widget name="prompt" position="868,180" size="954,35" font="Regular;30" noWrap="1" transparent="1"/>
+    <ePixmap pixmap="buttons/vkey_text.png" position="856,228" size="974,70" alphatest="blend" zPosition="-4"/>
+    <widget name="text" position="868,240" size="954,47" font="Regular;40" halign="right" noWrap="1" transparent="1"/>
+    <widget name="list" position="868,305" size="952,340" backgroundColor="#001c2c5c" foregroundColor="window-fg" selectionDisabled="1" transparent="1"/>
+    <widget name="locale" position="868,660" size="800,25" font="Regular;20" transparent="1"/>
+    <widget name="mode" position="1746,660" size="60,25" font="Regular;20" halign="right" transparent="1" valign="center"/>
+    <widget name="language" position="0,0" size="0,0" font="Regular;20" transparent="1"/>
+</screen>
+<!-- AC3LipSyncSetup -->
   <screen name="AC3LipSyncSetup" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate" />
     <widget name="config" scrollbarMode="showOnDemand" scrollbarSliderForegroundColor="cyan" scrollbarWidth="12" position="780,100" size="1110,912" itemHeight="38" font="Regular;28" transparent="1" />
