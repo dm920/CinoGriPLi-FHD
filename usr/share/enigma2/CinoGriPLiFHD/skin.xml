@@ -2108,11 +2108,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)//2, orgpos.y() + (o
   <screen name="VirtualKeyBoard" title="Virtual keyboard" position="fill" zPosition="99">
     <panel name="PigTemplate"/>
     <panel name="Weather" />
-    <ePixmap pixmap="buttons/key_text.png" alphatest="blend" position="30,1031" size="52,38"/>
-    <ePixmap pixmap="buttons/key_info.png" alphatest="blend" position="82,1031" size="52,38"/>
-    <ePixmap pixmap="buttons/key_help.png" alphatest="blend" position="135,1031" size="52,38"/>
+    <ePixmap pixmap="CinoGriPLiFHD/skin_default/buttons/key_text.png" alphatest="blend" position="30,1031" size="52,38"/>
+    <ePixmap pixmap="CinoGriPLiFHD/skin_default/buttons/key_info.png" alphatest="blend" position="82,1031" size="52,38"/>
+    <ePixmap pixmap="CinoGriPLiFHD/skin_default/buttons/key_help.png" alphatest="blend" position="135,1031" size="52,38"/>
     <widget name="prompt" position="868,180" size="954,35" font="Regular;30" noWrap="1" transparent="1"/>
-    <ePixmap pixmap="buttons/vkey_text.png" position="856,228" size="974,70" alphatest="blend" zPosition="-4"/>
+    <ePixmap pixmap="CinoGriPLiFHD/skin_default/vkey_text.png" position="856,228" size="974,70" alphatest="blend" zPosition="-4"/>
     <widget name="text" position="868,240" size="954,47" font="Regular;40" halign="right" noWrap="1" transparent="1"/>
     <widget name="list" position="868,305" size="952,340" backgroundColor="#001c2c5c" foregroundColor="window-fg" selectionDisabled="1" transparent="1"/>
     <widget name="locale" position="868,660" size="800,25" font="Regular;20" transparent="1"/>
